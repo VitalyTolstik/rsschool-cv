@@ -1,0 +1,52 @@
+* {
+    font-family: Nunito, sans-serif;
+    color: #3B4252;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.level-english {
+    margin-bottom: 20px;
+}
+
+.avatar {
+    height: 300px;
+    border-radius: 50%;
+}
+
+.back {
+    background-color: #ECEFF4;
+}
+
+.fn-ln {
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.topic {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: #3B4252;
+}
+
+#footer {
+    background-color: #D8DEE9;
+    margin: 0;
+    padding: 10px;
+}
+
+#header {
+    background-color: #D8DEE9;
+}
+
+.rs-logo {
+    height: 2em;
+}
