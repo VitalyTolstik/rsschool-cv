@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vitali Toustsik CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="back">
+    <header id="header">
+        <nav class="container">
+            <div class="row">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code-example">Code Example</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#english">English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h1 class="fn-ln">Vitali Toustsik</h1>
+        </section>
+        <section>
+            <img class="img-thumbnail avatar" src="./assets/img/avatar.png" alt="Avatar Vitali Toustsik">
+        </section>
+        <section>
+            <h2 id="contacts" class="topic">Contacts</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Location:</b> Minsk, Belarus</li>
+                <li class="list-group-item"><b>Phone:</b> +375 29 3400778</li>
+                <li class="list-group-item"><b>Email:</b> vital.tol90@gmail.com</li>
+                <li class="list-group-item"><b>GitHub:</b> <a href="https://github.com/VitalyTolstik">vitalytolstik</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="about-me" class="topic">About me</h2>
+            <p>I like to read books, learn new technologies, I like to work in a team and alone, I have experience
+                working
+                with foreign customers, work in the upsell department, currently I work in an outsourcing company as QA
+                Automation engineer</p>
+        </section>
+        <section>
+            <h2 id="skills" class="topic">Skills</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">JS</li>
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">CSS3</li>
+                <li class="list-group-item">Serenity-BDD</li>
+                <li class="list-group-item">Cucumber</li>
+                <li class="list-group-item">TestNG</li>
+                <li class="list-group-item">RestAssured</li>
+                <li class="list-group-item">Git</li>
+                <li class="list-group-item">Appium</li>
+                <li class="list-group-item">Maven</li>
+                <li class="list-group-item">Selenium</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="code-example" class="topic">Code Example</h2>
+            <pre>
+            @Step
+            public boolean isOddsFormatCorrect(String oddsFormat) {
+            openNoMarketLayoutIfPresent();
+            return oddsLabels().stream()
+                    .findFirst()
+                    .orElseThrow(() -> new NoSuchElementException("Can't find spread bet element"))
+                    .waitUntilVisible()
+                    .getText()
+                    .substring(ZERO, ONE)
+                    .matches(getOddsFormat(oddsFormat).getRegularExpression());
+            }
+        </pre>
+        </section>
+        <section>
+            <h2 id="experience" class="topic">Experience</h2>
+            <p>01.03.2020 - present <b>"Outsource company"</b></p>
+            <p><a href="https://github.com/VitalyTolstik/rsschool-cv">CV Project</a></p>
+        </section>
+        <section>
+            <h2 id="education" class="topic">Education</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>University: </b>Belarusian National Technical University, Powder
+                    metallurgy engineer
+                </li>
+                <li class="list-group-item"><b>Courses: </b>IT Academy (Java SE, Java EE), Streamline (A2, B1)</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="english" class="topic">English</h2>
+            <p class="level-english">B1</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row footer">
+                <a class="col-3" href="https://github.com/VitalyTolstik">github</a>
+                <div class="col-3">© 2022</div>
+                <a class="col-3" href="https://rs.school/js/"><img class="rs-logo"
+                                                                   src="https://rs.school/images/rs_school_js.svg"
+                                                                   alt="rs school logo"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
